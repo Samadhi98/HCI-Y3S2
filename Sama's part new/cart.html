@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+
+  <!-- imported from NANDANA part -->
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon.png">
+
+
+  <!-- importing bootstrap -->
+  <!-- importing cart.css custom file -->
+  <link rel="stylesheet" href="assets/css/cart.css">
+  <!-- importing jquery -->
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/icon.png">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/plugins/pe-icon-7-stroke.css">
+  <link rel="stylesheet" href="CSS/plugins/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/plugins/slick.min.css">
+  <link rel="stylesheet" href="CSS/plugins/animate.css">
+  <link rel="stylesheet" href="CSS/plugins/nice-select.css">
+  <link rel="stylesheet" href="CSS/plugins/jqueryui.min.css">
+
+
+  <!-- importing bootstrap -->
+  <link rel="sytylesheet" href="CSS/bootstrap.min.css">
+  <!-- importing cart.css custom file -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <link rel="stylesheet" href="CSS/cart.css">
+  <!-- importing jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    .bg-colors {
+      background: #D1913C;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(#ffffff, #C29958);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(#ffffff, #C29958);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .bg-color2 {
+      background: #ffffff;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(#C29958, #ffffff);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(#C29958, #ffffff);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .bg-color3 {
+      background: #ffffff;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(#c29958c9, #ffffff);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(#c29958c9, #ffffff);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+
+  <!-- header area starts from here -->
+
+  <header class="header-area header-wide bg-color3">
+    <div class="main-header d-none d-lg-block">
+        <div class="header-top bdr-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="welcome-message">
+                            <p>Welcome to your Shopping Cart</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <div class="header-top-settings">
+                            <ul class="nav align-items-center justify-content-end">
+                                <li class="curreny-wrap">
+                                    $ Currency
+                                    <i class="fa fa-angle-down"></i>
+                                    <ul class="dropdown-list curreny-list">
+                                        <li><a href="#">$ USD</a></li>
+                                        <li><a href="#">€ EURO</a></li>
+                                    </ul>
+                                </li>
+                                <li class="language">
+                                    <!-- <img src="../../Gamini Gems/assets/img/icon/en.png" alt="flag">  -->
+                                    English
+                                    <i class="fa fa-angle-down"></i>
+                                    <!-- <ul class="dropdown-list">
+                                        <li>
+                                            <a href="#"><img src="../../Gamini Gems/assets/img/icon/en.png" alt="flag"> english</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="../../Gamini Gems/assets/img/icon/fr.png" alt="flag"> french</a>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main-area sticky">
+            <div class="container">
+                <div class="row align-items-center position-relative">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="../index.html">
+                                <img src="images/icon.png" alt="Brand Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 position-static">
+                        <div class="main-menu-area">
+                            <div class="main-menu">
+                                <nav class="desktop-menu">
+                                    <ul>
+                                        <li class="active"><a href="../index.html">Home </i></a>
+
+                                        </li>
+                                        <li><a href="shop.html">Categories <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="shop.html">RINGS</a></li>
+                                                <li><a href="shop.html">BRACELETS</a></li>
+                                                <li><a href="shop.html">PENDANTS</a></li>
+                                                <li><a href="shop.html">EARINGS</a></li>
+                                                <li><a href="shop.html">PRECIOUS GEM STONES</a></li>
+                                                <li><a href="shop.html">NECLACES</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="shop.html">shop </i></a></li>
+                                        <li><a href="contact-us.html">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div
+                            class="header-right d-flex align-items-center justify-content-xl-between justify-content-lg-end">
+                            <div class="header-search-container">
+                                <button class="search-trigger d-xl-none d-lg-block"><i
+                                        class="pe-7s-search"></i></button>
+                                <form class="header-search-box d-lg-none d-xl-block animated jackInTheBox">
+                                    <input type="text" placeholder="Search from here"
+                                        class="header-search-field">
+                                    <!-- <button class="header-search-btn" style="margin-top: 23px;"><i class="pe-7s-search"></i></button> -->
+                                </form>
+                            </div>
+                            <div class="header-configure-area">
+                                <ul class="nav justify-content-end">
+                                    <li class="user-hover">
+                                      
+                                    </li>
+                                    <li>
+                                        <a href="wishlist.html ">
+                                            <i class="pe-7s-like "></i>
+                                            <div class="notification ">5</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="minicart-btn ">
+                                            <i class="pe-7s-shopbag "></i>
+                                            <div class="notification ">2</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-header d-lg-none d-md-block sticky ">
+        <div class="container-fluid ">
+            <div class="row align-items-center ">
+                <div class="col-12 ">
+                    <div class="mobile-main-header ">
+                        <div class="mobile-logo ">
+                            <a href="../index.html">
+                                <img src= "images/icon.png" alt="Brand Logo ">
+                            </a>
+                        </div>
+                        <div class="mobile-menu-toggler ">
+                            <div class="mini-cart-wrap ">
+                                <a href="sama's part new/cart.html ">
+                                    <i class="pe-7s-shopbag "></i>
+                                    <div class="notification ">0</div>
+                                </a>
+                            </div>
+                            <button class="mobile-menu-btn ">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside class="off-canvas-wrapper ">
+        <div class="off-canvas-overlay "></div>
+        <div class="off-canvas-inner-content ">
+            <div class="btn-close-off-canvas ">
+                <i class="pe-7s-close "></i>
+            </div>
+
+            <div class="off-canvas-inner ">
+                <div class="search-box-offcanvas ">
+                    <form>
+                        <input type="text " placeholder="Search Here... ">
+                        <button class="search-btn "><i class="pe-7s-search "></i></button>
+                    </form>
+                </div>
+                <div class="mobile-navigation ">
+                    <nav>
+                        <ul class="mobile-menu ">
+                            <li class="menu-item-has-children "><a href="../index.html">Home</a>
+
+                            <li class="menu-item-has-children "><a href="# ">Categories</a>
+
+                            </li>
+                            <li class="menu-item-has-children "><a href="# ">shop</a>
+
+                            </li>
+                            <li class="menu-item-has-children "><a href="# ">Blog</a>
+                                <ul class="dropdown ">
+                                    <li><a href="blog-left-sidebar.html ">blog left sidebar</a></li>
+                                    <li><a href="blog-list-left-sidebar.html ">blog list left sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html ">blog right sidebar</a></li>
+                                    <li><a href="blog-list-right-sidebar.html ">blog list right sidebar</a></li>
+                                    <li><a href="blog-grid-full-width.html ">blog grid full width</a></li>
+                                    <li><a href="blog-details.html ">blog details</a></li>
+                                    <li><a href="blog-details-left-sidebar.html ">blog details left sidebar</a></li>
+                                    <li><a href="blog-details-audio.html ">blog details audio</a></li>
+                                    <li><a href="blog-details-video.html ">blog details video</a></li>
+                                    <li><a href="blog-details-image.html ">blog details image</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.html ">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-settings ">
+                    <ul class="nav ">
+                        <li>
+                            <div class="dropdown mobile-top-dropdown ">
+                                <a href="# " class="dropdown-toggle " id="currency " data-toggle="dropdown "
+                                    aria-haspopup="true " aria-expanded="false ">
+                                    Currency
+                                    <i class="fa fa-angle-down "></i>
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="currency ">
+                                    <a class="dropdown-item " href="# ">$ USD</a>
+                                    <a class="dropdown-item " href="# ">$ EURO</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown mobile-top-dropdown ">
+                                <a href="# " class="dropdown-toggle " id="myaccount " data-toggle="dropdown "
+                                    aria-haspopup="true " aria-expanded="false ">
+                                    My Account
+                                    <i class="fa fa-angle-down "></i>
+                                </a>
+                                <div class="dropdown-menu " aria-labelledby="myaccount ">
+                                    <a class="dropdown-item " href="my-account.html ">my account</a>
+                                    <a class="dropdown-item " href="login-register.html "> login</a>
+                                    <a class="dropdown-item " href="login-register.html ">register</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas-widget-area ">
+                    <div class="off-canvas-contact-widget ">
+                        <ul>
+                            <li><i class="fa fa-mobile "></i>
+                                <a href="# ">0123456789</a>
+                            </li>
+                            <li><i class="fa fa-envelope-o "></i>
+                                <a href="# ">info@yourdomain.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="off-canvas-social-widget ">
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                        <a href="# "><i class="fa fa-twitter "></i></a>
+                        <a href="# "><i class="fa fa-pinterest-p "></i></a>
+                        <a href="# "><i class="fa fa-linkedin "></i></a>
+                        <a href="# "><i class="fa fa-youtube-play "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</header>
+
+  <!-- header area ends from here -->
+
+
+  <!-- content area starts from here -->
+
+  <div class="container-fluid">
+    <div class="row align-items-center position-relative">
+      <div class="col-lg-12">
+
+        <div class="basket">
+
+          <div class="basket-labels" style="background-color: #c29958; color: #ffffff">
+            <ul>
+              <li class="item item-heading">Item</li>
+              <li class="price">Price</li>
+              <li class="quantity">Quantity</li>
+              <li class="subtotal">Subtotal</li>
+            </ul>
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="images/jewelry-on-a-white-background-1.jpeg" alt="Gold Silver coated bracelet">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">4</span>&nbsp;x Gold Silver coated bracelet</strong></h1>
+                <p><strong>Size:</strong> <strong style="color: #c09403;">M</strong></p>
+                <p><strong>Availability:</strong> <strong style="color: #088b4a;">Available</strong></p>
+              </div>
+            </div>
+            <div class="price">320.00</div>
+            <div class="quantity">
+              <input type="number" value="4" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">250.00</div>
+            <div class="remove">
+              <button class="removeBtnDecorator" style="padding: 10px; font-size: 12px;">Remove</button>
+            </div>
+
+          </div>
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="images/bouton-russian-tri-colour-ring-p8871-9036_image.jpg" alt="24 K Gold Bracelet">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">1</span> x 24 K Gold Bracelet</strong></h1>
+                <p><strong>Size:</strong> <strong style="color: #997605;">L</strong></p>
+                <p><strong>Availability: </strong><strong style="color: #088b4a;">Available</strong></p>
+              </div>
+            </div>
+            <div class="price">350.00</div>
+            <div class="quantity">
+              <input type="number" value="1" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">350.00</div>
+            <div class="remove">
+              <button class="removeBtnDecorator" style="padding: 10px; font-size: 12px;">Remove</button>
+            </div>
+
+          </div>
+
+          <div class="basket-product">
+            <div class="item">
+              <div class="product-image">
+                <img src="images/jewelry-on-a-white-background-1.jpeg" alt="Gold Silver coated bracelet">
+              </div>
+              <div class="product-details">
+                <h1><strong><span class="item-quantity">4</span>&nbsp;x Gold Silver coated bracelet</strong></h1>
+                <p><strong>Size:</strong> <strong style="color: #c09403;">M</strong></p>
+                <p><strong>Availability:</strong> <strong style="color: #088b4a;">Available</strong></p>
+              </div>
+            </div>
+            <div class="price">320.00</div>
+            <div class="quantity">
+              <input type="number" value="4" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">250.00</div>
+            <div class="remove">
+              <button class="removeBtnDecorator" style="padding: 10px; font-size: 12px;">Remove</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="summary">
+            <div class="summary-total-items">Total items in your Cart: <span class="total-items"
+                style="color:#c29958"></span></div>
+            <div class="summary-subtotal">
+              <div class="subtotal-title">Subtotal</div>
+              <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+              <div class="summary-promo hide">
+                <div class="promo-title">Promotion</div>
+                <div class="promo-value final-value" id="basket-promo"></div>
+              </div>
+            </div>
+            <div class="summary-delivery">
+              <div class="subtotal-title">Delivery Cost</div>
+              <div class="subtotal-value">0</div>
+            </div>
+            <div class="summary-total">
+              <div class="total-title">Total</div>
+              <div class="total-value final-value" id="basket-total">130.00</div>
+            </div>
+            <div class="summary-checkout">
+              <button class="checkout-cta" onclick="window.location.href='checkout.html';">Go to Secure
+                Checkout</button>
+            </div>
+            <div class="basket-module" style="padding-top: 10px;">
+              <label for="promo-code">Enter your coupon number</label>
+              <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+              <button class="promo-code-cta">Apply</button>
+            </div>
+      
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+
+  <!-- content area ends from here -->
+
+
+  <!-- footer area starts from here -->
+  <footer class="footer-widget-area " style="padding-top: 10px;">
+    <div class="footer-top section-padding ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="widget-item ">
+                        <div class="widget-title ">
+                            <div class="widget-logo ">
+                                <a href="../index.html ">
+                                    <img src="images/icon.png " alt="brand logo ">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="widget-body ">
+                            <p>We are a team of designers and developers that create high quality wordpress,
+                                shopify, Opencart </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="widget-item ">
+                        <h6 class="widget-title ">Contact Us</h6>
+                        <div class="widget-body ">
+                            <address class="contact-block ">
+                                <ul>
+                                    <!-- <li><i class="pe-7s-home "></i> 4710-4890 Breckinridge USA</li> -->
+                                    <li><i class="pe-7s-mail "></i> <a
+                                            href="mailto:demo@plazathemes.com ">demo@yourdomain.com </a></li>
+                                    <li><i class="pe-7s-call "></i> <a href="tel:(012)800456789987 ">(012) 800
+                                            456 789-987</a></li>
+                                </ul>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="widget-item ">
+                        <h6 class="widget-title ">Information</h6>
+                        <div class="widget-body ">
+                            <ul class="info-list ">
+                                <li><a href="about-us.html ">about us</a></li>
+                                <li><a href="# ">Delivery Information</a></li>
+                                <li><a href="# ">privet policy</a></li>
+                                <li><a href="# ">Terms & Conditions</a></li>
+                                <li><a href="# ">contact us</a></li>
+                                <li><a href="# ">site map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="widget-item ">
+                        <h6 class="widget-title ">Follow Us</h6>
+                        <div class="widget-body social-link ">
+                            <a href="# "><i class="fa fa-facebook "></i></a>
+                            <a href="# "><i class="fa fa-twitter "></i></a>
+                            <a href="# "><i class="fa fa-instagram "></i></a>
+                            <a href="# "><i class="fa fa-youtube "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center mt-20 ">
+                <div class="col-md-6 ">
+                    
+                </div>
+                <div class="col-md-6 ">
+                    <div class="footer-payment ">
+                        <!-- <img src="images/footerPayment.png" alt="payment method "> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <!-- footer area ends from here -->
+
+  <script src="JS/cart.js"></script>
+
+</body>
+
+</html>
