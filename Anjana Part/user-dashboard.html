@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>User Dashboard</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/vendor/bootstrap3.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link href="assets/css/vendor/dashboard.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="assets/css/vendor/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css for header and footer -->
+    <style>
+
+    </style>
+
+    <style>
+        .bg-colors {
+            background: #D1913C;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(#ffffff, #C29958);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(#ffffff, #C29958);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .bg-color2 {
+            background: #ffffff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(#C29958, #ffffff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(#C29958, #ffffff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .bg-color3 {
+            background: #ffffff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(#c29958c9, #ffffff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(#c29958c9, #ffffff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <headerBody>
+
+    </headerBody>
+
+    <div id="wrapper" style="padding-top: 50px;">
+        <!-- style="margin-top: 50px;" -->
+
+        <!-- Navigation -->
+
+        <div id="page-wrapper col-lg-12">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 profile-userpic" style="padding: 0px;">
+                        <img src="assets/img/104971026_3244275785627897_6346704293606759074_o.jpg"
+                            class="img-responsive" alt="User Profile Pic">
+                    </div>
+                    <div class="col-lg-4 col-md-4" style="padding: 0px;">
+                        <h1 class="page-header">Hello Ranura,</h1>
+                        <h4>Welcome to your Dashboard</h4>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-money fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">12</div>
+                                        <div>Total Purchases</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-shopping-cart fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">5</div>
+                                        <div>Your Cart</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-heart fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">13</div>
+                                        <div>Total Wishlist</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <!--begins all no relevant -->
+                <div class="row">
+                    <div class="col-lg-8">
+
+                        <!-- /.panel -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="glyphicon glyphicon-list-alt"></i>&nbsp; Account Management
+                                <div class="pull-right">
+                                </div>
+                            </div>
+                            <!-- /.panel-heading -->
+
+                            <!-- panel-body beginning-->
+                            <div class="panel-body">
+
+                                <div class="row">
+
+                                    <div>
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#home">Your Information</a>
+                                            </li>
+                                            <li><a data-toggle="tab" href="#messages">Edit Your Information</a></li>
+                                            <li><a data-toggle="tab" href="#settings">Change your Password</a></li>
+
+                                        </ul>
+
+
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="home">
+                                                <hr>
+                                                <form class="form" action="##" method="post" id="registrationForm">
+                                                    <div class="form-group">
+
+                                                        <div class="col-sm-6">
+                                                            <label for="name">
+                                                                <h4>Your name</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="name"
+                                                                id="name" value="Ranura Gihara" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="email">
+                                                                <h4>Email</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="email"
+                                                                id="email" value="ranura@gmail.com" disabled>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="phone">
+                                                                <h4>Phone Number</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="phone"
+                                                                id="phone" value="0773456789" disabled>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-xs-6">
+                                                            <label for="streetAddress">
+                                                                <h4>Street Address</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="streetAddress"
+                                                                id="streetAddress" value="123, ABC Road, Colombo"
+                                                                disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="state">
+                                                                <h4>State</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="state"
+                                                                id="state" value="Western" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="city">
+                                                                <h4>City</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="city"
+                                                                id="city" value="Colombo" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="postal-code">
+                                                                <h4>postal code</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="postal-code"
+                                                                id="postal-code" value="34567" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="country">
+                                                                <h4>Country</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="country"
+                                                                id="country" value="Sri Lanka" disabled>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+
+                                                <hr>
+
+                                            </div>
+                                            <!--/tab-pane-->
+                                            <div class="tab-pane" id="messages">
+
+                                                <h2></h2>
+
+                                                <hr>
+                                                <form class="form" action="##" method="post" id="registrationForm">
+                                                    <div class="form-group">
+
+                                                        <div class="col-sm-6">
+                                                            <label for="name">
+                                                                <h4>Your name</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="name"
+                                                                id="name" value="Ranura Gihara"
+                                                                title="enter your name here"
+                                                                placeholder="Enter your name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="email">
+                                                                <h4>Email</h4>
+                                                            </label>
+                                                            <input type="email" class="form-control" name="email"
+                                                                id="email" value="ranura@gmail.com"
+                                                                title="Enter your email here" placeholder="Email">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="phone">
+                                                                <h4>Phone Number</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="phone"
+                                                                id="phone" value="0773456789"
+                                                                title="Enter your phone number here"
+                                                                placeholder="Phone Number">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-xs-6">
+                                                            <label for="streetAddress">
+                                                                <h4>Street Address</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="streetAddress"
+                                                                id="streetAddress" value="123, ABC Road, Colombo"
+                                                                title="Enter your street Address( ex: 123, John Street )"
+                                                                placeholder="Street Address">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="state">
+                                                                <h4>State</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="state"
+                                                                id="state" value="Western"
+                                                                title="Enter your state ( ex: California )"
+                                                                placeholder="State">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="city">
+                                                                <h4>City</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="city"
+                                                                id="city" value="Colombo" title="Enter your City"
+                                                                placeholder="City">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="postal-code">
+                                                                <h4>postal code</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="postal-code"
+                                                                id="postal-code" value="34567"
+                                                                title="Enter your postal code"
+                                                                placeholder="Postal Code">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="country">
+                                                                <h4>Country</h4>
+                                                            </label>
+                                                            <input type="text" class="form-control" name="country"
+                                                                id="country" value="Sri Lanka"
+                                                                title="Select Your Country form here">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12">
+                                                            <br>
+                                                            <button class="btn btn-lg" type="submit"
+                                                                style="background-color: #c29958; color: white;"><i
+                                                                    class="glyphicon glyphicon-ok-sign"></i>
+                                                                Save</button>
+                                                            <button class="btn btn-lg" type="submit"
+                                                                style="background-color: #7e0303; color: white;"><i
+                                                                    class="glyphicon glyphicon-remove"></i> Delete Your
+                                                                Account</button>
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+                                            <!--/tab-pane-->
+                                            <div class="tab-pane" id="settings">
+
+
+
+                                                <form class="form" action="##" method="post" id="registrationForm">
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="oldPW">
+                                                                <h4>Your Current Password</h4>
+                                                            </label>
+                                                            <input type="password" class="form-control" name="oldPW"
+                                                                id="oldPW" placeholder="Enter your Current password"
+                                                                title="Enter your Current password">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="newPW">
+                                                                <h4>Your New Password</h4>
+                                                            </label>
+                                                            <input type="password" class="form-control" name="newPW"
+                                                                id="newPW" placeholder="Enter your New password"
+                                                                title="Enter your New password">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+
+                                                        <div class="col-xs-6">
+                                                            <label for="retypeNewPW">
+                                                                <h4>Repeat Your New Password</h4>
+                                                            </label>
+                                                            <input type="password" class="form-control"
+                                                                name="retypeNewPW" id="retypeNewPW"
+                                                                placeholder="Enter your New password again"
+                                                                title="Enter your New password again">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-xs-12">
+                                                            <br>
+                                                            <button class="btn btn-lg pull-left" type="submit"
+                                                                style="background-color: #c29958; color: white;"><i
+                                                                    class="glyphicon glyphicon-ok-sign"></i>
+                                                                Save</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                        <!--/tab-pane-->
+                                    </div>
+                                    <!--/tab-content-->
+
+
+                                </div>
+
+
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+
+                    </div>
+                    <!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-tasks fa-fw"></i> Recent Order History
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-money fa-fw"></i> 24K blue Diamond Ring Ordered
+                                        <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                        </span>
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-money fa-fw"></i> 4.05C Blue Diamond Ordered
+                                        <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                        </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-money fa-fw"></i>18K Gold Coated Necklace Ordered
+                                        <span class="pull-right text-muted small"><em>Yesterday</em>
+                                        </span>
+                                    </a>
+                                </div>
+                                <a href="../../Gamini Gems/Sama's part new/order-history.html" class="btn btn-warning btn-block">View Complete Order History</a>
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+
+                        <!-- /.panel -->
+                        <div class="chat-panel panel panel-default">
+                            <div class="panel-heading">
+                                <i class="fa fa-comments fa-fw"></i>
+                                Your Recent Reviews
+
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <ul class="chat">
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+                                                class="img-circle" />
+                                        </span>
+
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">24K Gold Necklace</strong>
+                                                <small class="pull-right text-muted">
+                                                    <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                This is an awesome product. Should buy this one.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix">
+                                        <span class="chat-img pull-right">
+                                            <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+                                                class="img-circle" />
+                                        </span>
+
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <small class=" text-muted">
+                                                    <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
+                                                </small>
+                                                <strong class="pull-right primary-font">Gamini Gems Teams</strong>
+                                            </div>
+                                            <p>
+                                                Thank you for your comment. Enjoy our other precious products.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="left clearfix">
+                                        <span class="chat-img pull-left">
+                                            <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar"
+                                                class="img-circle" />
+                                        </span>
+
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <strong class="primary-font">18K sliver coated Ring</strong>
+                                                <small class="pull-right text-muted">
+                                                    <i class="fa fa-clock-o fa-fw"></i> 14 mins ago
+                                                </small>
+                                            </div>
+                                            <p>
+                                                I love this product.
+                                                Bought this last summer.
+                                                But I have some issues regarding to this. The silver coat is getting
+                                                oxidate so fast.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="right clearfix">
+                                        <span class="chat-img pull-right">
+                                            <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar"
+                                                class="img-circle" />
+                                        </span>
+
+                                        <div class="chat-body clearfix">
+                                            <div class="header">
+                                                <small class=" text-muted">
+                                                    <i class="fa fa-clock-o fa-fw"></i> 15 mins ago
+                                                </small>
+                                                <strong class="pull-right primary-font">Samadhi Kariyawasam</strong>
+                                            </div>
+                                            <p>
+                                                I've got the same issue of my ring.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.panel-body -->
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input id="btn-input" type="text" class="form-control input-sm"
+                                        placeholder="Type your message here..." />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-warning btn-sm" id="btn-chat">
+                                            Send
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- /.panel-footer -->
+                        </div>
+                        <!-- /.panel .chat-panel -->
+                    </div>
+                    <!-- /.col-lg-4 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <footerBody>
+
+    </footerBody>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="assets/js/dashboard.js"></script>
+
+</body>
+
+</html>
